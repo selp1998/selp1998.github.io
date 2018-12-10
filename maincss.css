@@ -1,0 +1,358 @@
+.page{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+html{
+  background-color: #000;
+}
+
+.box {
+    position: absolute;
+    overflow: hidden;
+    height: 75%;
+    width: 25%;
+    background: url('1stimage.jpg') center left no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 9999999;
+    margin-top: 2% ;
+    margin-left: 5%;
+    box-shadow: 0 0 7px 4px;
+  }
+  
+  .box2 {
+    position: absolute;
+    overflow: hidden;
+    height: 75%;
+    width: 25%;
+    background: url('2ndimage.jpg') center left no-repeat;
+    background-size:cover;
+    cursor: pointer;
+    z-index: 9999999;
+    margin-top: 2% ;
+    margin-left: 36.5%;
+    box-shadow: 0 0 7px 4px;
+  }
+  
+  .box3 {
+    position: absolute;
+    overflow: hidden;
+    height: 75%;
+    width: 25%;
+    background: url('3dimage.jpg') center left no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 9999999;
+    margin-top: 2% ;
+    margin-left: 68%;
+    box-shadow: 0 0 7px 4px;
+  }
+.booter{
+  background-color: rgb(232,232,230);
+  width: 100%;
+  height: 34%;
+  position: absolute;
+  top: 55%;
+  left:0%;
+  z-index: 10;
+}
+.header{
+  background-image: linear-gradient(to bottom, rgb(33, 30, 30), transparent 100%);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 13%;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  display: block;
+  z-index: 11;
+}
+.bootheader{
+  background-image: linear-gradient(to top, rgb(33, 30, 30), transparent 90%);
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  height: 27%;
+  position: absolute;
+  top: 23%;
+  left:0px;
+  z-index: 11;
+}
+.seti{
+  width: 100%;
+  left: 20%;
+  top:15%;
+}
+
+#vk{
+  width: 4%;
+  position: absolute;
+  left: 40%;
+  top: 90.5%;
+  z-index: 5;
+}
+#inst{
+  width: 4%;
+  position: absolute;
+  left: 48%;
+  top: 90.5%;
+  z-index: 5;
+}
+#viber{
+  width: 4%;
+  position: absolute;
+  left: 56%;
+  top: 90.5%;
+  z-index: 5;
+}
+#google{
+  width: 4%;
+  position: absolute;
+  left: 64%;
+  top: 90.5%;
+  z-index: 5;
+}
+
+  @media (min-width: 768px) and (max-width: 991px)
+  {
+    .box{
+      height: 75%;
+    }
+    .box2{
+      height: 75%;
+    }
+    .box3{
+      height: 75%;
+    }
+    .booter{
+      height: 10%;
+      top:35%;
+    }
+    .bootheader{
+      height: 9%;
+    }
+    #gif{
+      width: 100%;
+    }
+    .seti{
+      top: 0%
+    }
+  }
+  .hover-effect {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 8, 31, 0.62);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .box:hover .hover-effect {
+    opacity: 1;
+  }
+  .box:hover .hover-text {
+    right: 0;
+  }
+  .box2:hover .hover-effect {
+    opacity: 1;
+  }
+  .box2:hover .hover-text {
+    right: 0;
+  }
+  .box3:hover .hover-effect {
+    opacity: 1;
+  }
+  .box3:hover .hover-text {
+    right: 0;
+  }
+  
+  .hover-text {
+    position: absolute;
+    right: -100%;
+    bottom: 0;
+    display: block;
+    max-width: 100%;
+    padding: 40px 45px;
+    color: #e2e2e2;
+    text-decoration: none;
+    text-align: right;
+    line-height: 1.5em;
+    font-size: 15px;
+    font-family: "Proxima Nova";
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0.8em 0;
+    margin-bottom: 0.3em;
+    border-bottom: 1px solid #fff;
+  }
+  
+  p {
+      width: 70%;
+      line-height: 1.7em;
+      display: inline-block;
+      text-align: right;
+  }
+#backgroundcolor
+{
+    background-color: rgb(33, 30, 30);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0%;
+    top:0%;
+    z-index: 1;
+}#preloader {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999;
+  }
+  .loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: rgb(202, 202, 70);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+
+  }
+  
+  .loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: rgb(223, 223, 157);
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+
+  }
+  
+  .loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: rgb(232,232,230);
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+#slider-wrap{
+    width:100%; 
+    left: 0%;
+    top: 0%;
+    z-index: 10;
+	}
+#slider{ 
+	width:100%;
+	height:50%;
+	overflow: hidden;
+    position:absolute;
+    z-index: 10;
+    left: 0%;
+    top: 0%;}
+    
+.slide{
+	width:100%;
+    height:70%;
+    left: 0%;
+    top: 0%;
+    z-index: 10;
+	}
+
+#gif{
+    width: 30%;
+    position: absolute;
+    left: 3%;
+    top: 9px;
+    z-index: 21;
+}
+#bootergif{
+
+    max-width: 50%;
+    min-width: 20%;
+    width: 30%;
+    float: left;
+    position: absolute;
+    left: 5.7%;
+    top: 90%;
+    
+}
+
+  .booter:before{
+    background: linear-gradient(-45deg, transparent 20px, rgb(33, 30, 30) 0),
+                linear-gradient(45deg, transparent 20px, rgb(33, 30, 30) 0);
+    background-position: left bottom;
+    background-size: 20px 20px;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    z-index: 10;
+  }
+  .xml
+  {
+    width: 20%;
+    height: 10%;
+    margin-top: 43.5%;
+    margin-left: 75%;
+    color:white;
+    z-index: 1000000000000000000;
+  }
+  .foot{
+    height: 80%;
+  }
